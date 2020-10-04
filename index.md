@@ -72,7 +72,7 @@ __...faltou cobrir algum tópico ?__
 Esse é um mini-curso sobre PHP, mas minha intenção é fazê-lo crescer cada vez mais. Eu jé tenho alguns tópicos em mente
 que irei cobrir e tenho a certeza que você também deve ter alguma coisa em mente, que tal compartilhar a sua ideia ?
 
-Na lista de [issus do repositório](https://github.com/devfuria/php/issues) você poderá ver o que já temos em mente
+Na lista de [issues do repositório](https://github.com/devfuria/php/issues) você poderá ver o que já temos em mente
 (para evitar de criar um item duplicado). Fique à vontade para adicionar o item que você quizer. Também poderá escrever
 um comentário nos itens já existentes.
 
