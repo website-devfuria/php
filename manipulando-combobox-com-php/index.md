@@ -39,7 +39,6 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
     </body>
 </html>
-
 ```
 
 Os itens são representados pela tag `option`, cada item é uma `option`.
@@ -139,7 +138,7 @@ if ($_POST['cidades']) {
 }
 ```
 
-Dentro dos blocos `if {} else {}` introduziremos código para fazer alguma coisa com o valor da combobox. Normalmente 
+Dentro dos blocos `if {} else {}` introduziremos código para fazer alguma coisa com o valor da combobox. Normalmente
 persistimos em um banco de dados, mas por hora não veremos esse código. Apenas alterei o texto para dar uma idéia melhor...
 
 ```php
@@ -157,7 +156,7 @@ if ($_POST['cidades']) {
 Há ainda um caso no qual o controle `select` nem chega a ser ser enviado, é o caso dele simplesmente não existir
 (não há a tag `<select></select>`).
 
-Se isto acontecer o seu script irá lançar um erro, pois estamos acessando a chave cidades do array `$_POST` sem antes 
+Se isto acontecer o seu script irá lançar um erro, pois estamos acessando a chave cidades do array `$_POST` sem antes
 checar se a chave existe.
 
 A solução é perguntar se `$_POST['cidades']` está "setada", caso não esteja, atribuiremos `null`.
@@ -165,7 +164,7 @@ A solução é perguntar se `$_POST['cidades']` está "setada", caso não esteja
 ```php
 $_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;
 ```
-    
+
 
 Juntando tudo temos o resultado final:
 
@@ -319,8 +318,8 @@ $valor_selecionado = "sbc";
 
 ### Promovendo a reusabilidade utilizando-se de uma função
 
-Imagine que você tem milhões de combobox em seu sistema e agora precisa fazer um pequena alteração (uma alteração 
-qualquer). Você terá que correr atrás das milhões de combo e mudar uma a uma. Falei em milhões, mas mesmo que fossem 
+Imagine que você tem milhões de combobox em seu sistema e agora precisa fazer um pequena alteração (uma alteração
+qualquer). Você terá que correr atrás das milhões de combo e mudar uma a uma. Falei em milhões, mas mesmo que fossem
 apenas 2 já seria torturante.
 
 A solução é correr na frente e não atrás (momento filosófico), então que tal utilizar uma função para "printar" a combo?
