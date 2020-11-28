@@ -1,6 +1,6 @@
 ---
 layout:      secao
-title:       PHP 7
+title:       PHP
 description: Aprenda PHP de verdade!
 ---
 
