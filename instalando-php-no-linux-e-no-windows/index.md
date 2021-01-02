@@ -55,6 +55,21 @@ Fonte:
 - [php-8.0-installation-update-guide-debian-ubuntu](https://php.watch/articles/php-8.0-installation-update-guide-debian-ubuntu)
 
 
+Resolvendo o erro __Permission denied: AH00072: make_sock: could not bind to address [::]:80__
+
+Você precisará reiniciar o Apache, como está o status dele:
+
+    sudo service apache2 status
+
+Se estiver parado, poderá inicilizar executando:
+
+    sudo service apache2 status
+
+Caso apareca o erro: `Permission denied: AH00072: make_sock: could not bind to address`, apenas execute:
+
+    net stop was /y
+
+
 ---
 
 
