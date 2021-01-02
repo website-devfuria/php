@@ -5,19 +5,60 @@ capitulo:    "php-comecando"
 ordem:       4
 ---
 
+Aqui é uma pequena coleção de receitas para instalação do PHP 8.
 
-### Instalando o PHP 8
+Acho que você precisará apenas da primeira.
 
-Em breve !
+Ele instala o PHP 8 no wsl2 que é um subsistema do Linux que roda dentro do Windows.
+
+A receita ajudará para quem é do WIndows mas também ajudará você caso queria instalar em uma versão "genuína" Linux Ubuntu.
+
+
+## Instalando o PHP 8 no wsl2
+
+Você conheçe o [wsl2](https://docs.microsoft.com/pt-br/windows/wsl/install-win10) ?
+
+Ele é um subsistema Linux que roda dentro do Windows.
+
+Este receita serve para o Ubuntu, porém eu executei ela no wsl... e deu tudo certo.
+
+Primeiro, adicione os pacotes PPA:
+
+    sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+    sudo apt-get update
+
+
+Instale o PHP8 e o CLI também:
+
+    sudo apt install php8.0-common php8.0-cli -y
+
+Já dá para testar:
+
+    php -v # Show PHP version.
+    php -m # Show PHP modules loaded.
+
+
+Você precisará do Xdebug:
+
+    sudo apt install php8.0-xdebug
+
+
+Agora você pode escolher entre Apache ou Nginx:
+
+    sudo apt install php8.0-fpm             # Nginx
+    sudo apt install libapache2-mod-php8.0  # Apache
+
+Eu fui de Apache.
+
+Fonte:
+
+- [php-8.0-installation-update-guide-debian-ubuntu](https://php.watch/articles/php-8.0-installation-update-guide-debian-ubuntu)
+
 
 ---
 
 
-### Instalando o PHP no Windows
-
-Em breve !
-
----
+Abaxio, deixo registrado algumas receitas mais antigas, acho que você não precisará delas, mas caso precise...
 
 
 ### Debian 8 (Jessie)
