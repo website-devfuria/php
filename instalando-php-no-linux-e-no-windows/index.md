@@ -11,7 +11,7 @@ Acho que você precisará apenas da primeira.
 
 Ele instala o PHP 8 no wsl2 que é um subsistema do Linux que roda dentro do Windows.
 
-A receita ajudará para quem é do WIndows mas também ajudará você caso queria instalar em uma versão "genuína" Linux Ubuntu.
+A receita ajudará para quem é do Windows mas também ajudará você caso queria instalar em uma versão "genuína" Linux Ubuntu.
 
 
 ## Instalando o PHP 8 no wsl2
@@ -24,7 +24,7 @@ Este receita serve para o Ubuntu, porém eu executei ela no wsl... e deu tudo ce
 
 Primeiro, adicione os pacotes PPA:
 
-    sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+    sudo add-apt-repository ppa:ondrej/php
     sudo apt-get update
 
 
@@ -48,14 +48,18 @@ Agora você pode escolher entre Apache ou Nginx:
     sudo apt install php8.0-fpm             # Nginx
     sudo apt install libapache2-mod-php8.0  # Apache
 
-Eu fui de Apache.
 
 Fonte:
 
 - [php-8.0-installation-update-guide-debian-ubuntu](https://php.watch/articles/php-8.0-installation-update-guide-debian-ubuntu)
 
 
-Resolvendo o erro __Permission denied: AH00072: make_sock: could not bind to address [::]:80__
+---
+
+
+### Resolvendo o erros
+
+__Permission denied: AH00072: make_sock: could not bind to address [::]:80__
 
 Você precisará reiniciar o Apache, como está o status dele:
 
@@ -176,4 +180,4 @@ Depois, os demais pacotes...
 
 A lista acima era a que eu costumava utilizar, você deve considerar apenas os módulos que você utilizará.
 
-E não se esquece de [reiniciar o Apache ](/linux/reiniciar-servidor-apache) (caso esteja utilizando o Apache).
+E não se esquece de [reiniciar o Apache ](/linux/apache-como-reiniciar-servidor-apache/) (caso esteja utilizando o Apache).
